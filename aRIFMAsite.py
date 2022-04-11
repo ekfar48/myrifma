@@ -2,7 +2,7 @@ from flask import Flask, request, send_file
 import os
 app = Flask(__name__)
 
-with open("C:\\DocE\\russian.txt","r", encoding='cp1251') as file:
+with open("//mypath//russian.txt","r", encoding='cp1251') as file:
     all_words = file.read().split('\n')
     file.close()
 
