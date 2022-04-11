@@ -42,7 +42,7 @@ def home_view():
     
     <center><form action="" method="post">
         <p>
-	    <label for="username">Рифма</label>
+	    <label for="username">Рифма к слову '{rhyme_word}'</label>
 	    <input type="text" name="username">
 	</p>
 	<p>
