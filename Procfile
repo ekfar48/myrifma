@@ -1,2 +1,1 @@
-
-web: gunicorn aWEBSITEEKFARAheroku:app
+web: gunicorn aRIFMAsite:app
