@@ -24,7 +24,7 @@ def rhyme(mass,word,chain=False):
     if len(returned) >= 1:
         return returned
     #return "??DONT??FIND??"
-    return "??MASSIVE??NULL??"
+    return "<center>??MASSIVE??NULL??</center>"
 
 @app.route('/',methods=['post','get'])
 def home_view():
