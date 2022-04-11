@@ -1,1 +1,1 @@
-web: gunicorn aRIFMAsite:app
+web: gunicorn aRIFMAsite.py:app
