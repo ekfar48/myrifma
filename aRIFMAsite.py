@@ -26,7 +26,7 @@ def rhyme(mass,word,chain=False):
     #return "??DONT??FIND??"
     return "<center>??MASSIVE??NULL??</center>"
 
-@app.route('/',methods=['post','get'])
+@app.route('/',methods=['post'])
 def home_view():
     rhyme_word = 'привет'
     if request.method == 'POST':
