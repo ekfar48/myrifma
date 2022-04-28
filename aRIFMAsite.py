@@ -26,6 +26,19 @@ def rhyme(mass,word,chain=False):
     #return "??DONT??FIND??"
     return "<center>??MASSIVE??NULL??</center>"
 
+
+def random_rhymes(mass,count=1):
+    if count <= 0:
+        count = 1
+    import random
+    returned = []
+    for i in range(count):
+        returned.append(random.choise(mass))
+    print("random wordssss")
+    print(returned)
+    return returned
+
+
 @app.route('/',methods=['post','get'])
 def home_view():
     rhyme_word = 'привет'
@@ -53,6 +66,23 @@ def home_view():
     </body>
 </html>
 """
+
+
+@app.route('/r')
+def random():
+    return f"""
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Поиск рифм</title>
+    </head>
+    <body>
+        <center><p>Нажми на кнопку и получи слова</p></center>
+    <p>{random_rhymes(mass,count=30)}</p>
+    </body>
+</html>
+"""
+
 
 @app.route(f'/d/<string:file_ekfara>')
 def download(file_ekfara):
