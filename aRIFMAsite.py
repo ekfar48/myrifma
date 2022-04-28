@@ -69,7 +69,7 @@ def home_view():
 
 
 @app.route('/r')
-def random():
+def random_view():
     return f"""
 <html>
     <head>
